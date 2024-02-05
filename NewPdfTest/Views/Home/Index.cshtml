@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to pdf generator</h1>
+
+    <!-- Form to input the URL -->
+    <form asp-controller="Home" asp-action="ExportToPdf" method="get">
+        <div class="form-group">
+            <label for="url">Enter URL:</label>
+            <input type="text" id="url" name="url" class="form-control" />
+        </div>
+
+        <!-- Button to submit the form -->
+        <button type="submit" class="btn btn-primary">Generate pdf</button>
+    </form>
+</div>
+
